@@ -1,6 +1,6 @@
 # FoldingTabBar
 
-Inspired by this design on Dribbble, I did an android version.
+Inspired by [this design](https://dribbble.com/shots/2003376-Tab-Bar-Animation) on Dribbble, I did an android version.
 
 Hope you'll like it.
 
