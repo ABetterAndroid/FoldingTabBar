@@ -28,7 +28,21 @@ public class MainActivity extends AppCompatActivity {
         foldingTabBar3.setOnTabItemClickListener(tabItemClickListener3);
         foldingTabBar4.setOnTabItemClickListener(tabItemClickListener4);
 
+        foldingTabBar1.setTabStateListener(tabStateListener);
+
     }
+
+    FoldingTabBar.TabStateListener tabStateListener = new FoldingTabBar.TabStateListener() {
+        @Override
+        public void onTabClosed() {
+            Toast.makeText(MainActivity.this, "tab1 closed", Toast.LENGTH_SHORT).show();
+        }
+
+        @Override
+        public void onTabOpened() {
+            Toast.makeText(MainActivity.this, "tab1 opened", Toast.LENGTH_SHORT).show();
+        }
+    };
 
     FoldingTabBar.OnTabItemClickListener tabItemClickListener1 = new FoldingTabBar.OnTabItemClickListener() {
         @Override
